@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="style.css">
+    <title>Update</title>
+</head>
+
+<body>
+    <div id="header-wrapper">
+        <div id="header">
+            <div id="logo">
+                <h1><a href="#">Dumplings</a></h1>
+            </div>
+            <div id="menu" class="menu">
+                <ul>
+                    <li class="current_page_item"><a href="/" accesskey="1" title="">Home</a></li>
+                    <li class="current_page_item"><a href="/addcake" accesskey="1" title="">Add Cake</a></li>
+                    <li class="current_page_item"><a href="/login" accesskey="3" title="">Login</a>
+                    </li>
+                    <li class="current_page_item"><a href="" accesskey="4" title="">Logout </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="d-flex justify-content-center h-100">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Update</h3>
+                    <div class="d-flex justify-content-end social_icon">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <form action="/update" method="get">
+                        <input type="hidden" name="txtName" id="txtid" value="{{model._id}}">
+                        <div style="color: white;">Name</div>
+                        <input type="text" name="txtName" id="txtid" placeholder="Cake'name" class="form-control"
+                            value="{{model.name}}">
+                        <br>
+                        <div style="color: white;">Price</div>
+                        <input type="text" name="txtPrice" id="{{model._id}}" placeholder="Cake's price"
+                            class="form-control" value="{{model.price}}">
+                        <br>
+                        <input href="/update?id={{_id}}" class="btn login_btn" type="submit" value="Update">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

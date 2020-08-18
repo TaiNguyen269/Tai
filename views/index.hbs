@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome to Store</title>
+</head>
+
+<body>
+    <div id="header-wrapper">
+        <div id="header">
+            <div id="logo">
+                <h1><a href="#">Dumplings</a></h1>
+            </div>
+            <div id="menu" class="menu">
+                <ul>
+                    <li class="current_page_item"><a href="/" accesskey="1" title="">Home</a></li>
+                    <li class="current_page_item"><a href="/addcake" accesskey="1" title="">Add Cake</a></li>
+                    <li class="current_page_item"><a href="/login" accesskey="3" title="">Login</a>
+                    </li>
+                    <li class="current_page_item"><a href="" accesskey="4" title="">Logout </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="edit">{{#each model}}
+
+        Cake's name: {{name}}
+        <br>
+        Cake's price: {{price}}
+        <br>
+        {{!-- {{image}} --}}
+        <br>
+        <button class="btn login_btn" style="font-size: 20px;"><a href="/remove?id={{_id}}">Delete</a></button></button>
+        <button class="btn login_btn" style="font-size: 20px;"><a href="/update">Update</a></button></button>
+        <br>
+        {{/each}}</div>
+
+
+</body>
+
+</html>

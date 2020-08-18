@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Category</title>
+</head>
+
+<body>
+
+    <body>
+        <div id="header-wrapper">
+            <div id="header">
+                <div id="logo">
+                    <h1><a href="#">Dumplings</a></h1>
+                </div>
+                <div id="menu" class="menu">
+                    <ul>
+                        <li class="current_page_item"><a href="/" accesskey="1" title="">Home</a></li>
+                        <li class="current_page_item"><a href="/addcake" accesskey="1" title="">Add Cake</a></li>
+                        <li class="current_page_item"><a href="/" accesskey="3" title="">Login</a>
+                        </li>
+                        <li class="current_page_item"><a href="" accesskey="4" title="">Logout </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <ul class="list-group">
+            {{#each model}}
+            {{name}} <br>
+            {{category}} <br>
+            {{price}} <br>
+            {{!-- {{<img src="https://cdn.tgdd.vn/Files/2018/09/03/1114774/bi-quyet-lam-banh-trung-thu-bat-bai-ai-cung-co-the-lam-duoc.jpg"/> }} --}}
+            {{!-- <li class="list-group-item"><a href="/remove?id={{_id}}">Delete</a></li> --}}
+            {{/each}}
+
+        </ul>
+    </body>
+
+</html>
